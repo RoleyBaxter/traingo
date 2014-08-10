@@ -10,10 +10,16 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf.global_settings import STATICFILES_DIRS
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SETTINGS_DIR = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+
+STATIC_PATH = os.path.join(PROJECT_PATH,'static')
+STATICFILES_DIRS = (
+                    STATIC_PATH,
+)
 
 
 

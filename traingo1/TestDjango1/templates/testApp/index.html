@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+{% load static %}
+
 <html>
 	<head>
 		<title>testWeb</title>
@@ -9,5 +12,6 @@
 		
 		hello world! <strong>{{ boldmessage }}</strong><br />
 		<a href="/testApp/about">About</a><br />
+		<img src="{% static "rango.jpg" %}" alt="Picture of Rango!" />
 	</body>
 </html>
