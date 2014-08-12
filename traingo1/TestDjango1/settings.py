@@ -20,7 +20,7 @@ STATIC_PATH = os.path.join(PROJECT_PATH,'static')
 STATICFILES_DIRS = (
                     STATIC_PATH,
 )
-DATABASE_PATH = os.path.join(PROJECT_PATH, 'rango.db')
+DATABASE_PATH = os.path.join(PROJECT_PATH, 'testApp.db')
 
 
 
